@@ -28,4 +28,14 @@ Examples:
 
 
 
-logs 'logs follow' exec 'exec with -it' stop ps -a start 'rm rm -f'  
+Container Management - logs 'logs follow' exec 'exec with -it' stop ps -a start 'rm rm -f' restart policy env cp top 
+
+Image management - images rmi commit tag login push history
+Image management - create image Dockerfile
+
+Volumes
+
+Network
+
+
+
