@@ -22,3 +22,7 @@ artifacts:
   files:
     - '**/*'
   name: iDevOpsApp-$CODEBUILD_BUILD_NUMBER
+reports:
+  iDevOpsTestReport:
+    files:
+      - junit.xml
