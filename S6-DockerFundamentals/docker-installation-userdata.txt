@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#update
+sudo yum -y update
+
+#install docker
+sudo amazon-linux-extras install -y docker
+
+#start docker
+sudo service docker start
+
+# add permissions to ec2-user to run docker commands without sudo
+sudo usermod -a -G docker ec2-user
+
+# make docker auto start
+sudo chkconfig docker on
+
+#restart the terminal after installation 
